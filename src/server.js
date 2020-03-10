@@ -12,6 +12,6 @@ mongoose.connect('mongodb+srv://erbon:erbon@tindev-db-7mtkr.mongodb.net/dbtindev
 
 server.use(cors());
 server.use(express.json());
-
+var porta = process.env.PORT || 8080;
 server.use(routes);
-server.listen(3333,"https://tindev-back-end.herokuapp.com"); 
+server.listen(porta); 
